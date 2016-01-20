@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "Register" do
-  scenario "when sending valid info" do
+  scenario "when sending valid information" do
     visit root_path
     click_link t("helpers.students.create")
 
