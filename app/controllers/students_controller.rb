@@ -11,7 +11,7 @@ def create
   @student = Student.new(student_params)
 
   if @student.save
-    redirect_to root_path, notice: t("flash.signup.create.notice")
+    redirect_to root_path, notice: t("flash.register.create.notice")
   else
     render :new
   end

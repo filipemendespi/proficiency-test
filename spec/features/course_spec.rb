@@ -1,12 +1,12 @@
-require 'spec_rails'
+require 'rails_helper'
 
 feature "Register" do
   scenario 'when sending valid information' do
     visit root_path
-    click_link t("form.helpers.course.create")
+    click_link t("helpers.course.create")
 
-    fill_in label("coruse.name"), with: "Sistemas de Informação"
-    fill_in label("coruse.description"), with: "Curso muito bom"
+    fill_in label("course.name"), with: "Sistemas de Informação"
+    fill_in label("course.description"), with: "Curso muito bom"
     select('Ativo', :from => label("course.status"))
     click_button submit("course.create")
 

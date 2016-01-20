@@ -1,5 +1,7 @@
 pt-BR:
   titles:
+    courses:
+      create: "Cadastro de Curso"
     students:
       index: "Projeto Repense"
       create: "Cadastro de Aluno"
