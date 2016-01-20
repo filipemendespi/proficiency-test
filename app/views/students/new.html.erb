@@ -1,0 +1,24 @@
+<h1>
+  <%= t("titles.students.create") %>
+</h1>
+
+<%= simple_form_for @student do |f| %>
+  <p>
+    <%= f.input :name, label: t("form.labels.students.name") %>
+  </p>
+
+  <p>
+    <%= f.input :register_number, label: t("form.labels.students.register_number") %>
+  </p>
+
+  <p>
+    <%= f.input :status, collection: Student.student_types.keys,
+    label: t("form.labels.students.status") %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+    <br />
+    <%= link_to t("action.back"), root_path %>
+  </p>
+<% end %>
