@@ -1,5 +1,7 @@
 pt-BR:
   titles:
+    room:
+      create: "Matricula"
     courses:
       create: "Cadastro de Curso"
     students:

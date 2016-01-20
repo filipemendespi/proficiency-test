@@ -1,0 +1,21 @@
+<h1>
+  <%= t("titles.room.create") %>
+</h1>
+
+<%= simple_form_for @room do |f| %>
+  <p>
+    <%= f.label t("form.labels.students.status") %>
+    <%= f.collection_select :students_id, Student.all, :id, :name %>
+  </p>
+
+  <p>
+    <%= f.label t("form.labels.course.status") %>
+    <%= f.collection_select :courses_id, Course.all, :id, :name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+    <br />
+    <%= link_to t("action.back"), root_path %>
+  </p>
+<% end %>

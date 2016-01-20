@@ -13,7 +13,7 @@
 
   <p>
     <%= f.input :status, collection: Student.student_types.keys,
-    label: t("form.labels.students.status") %>
+    label: t("form.labels.students.status"), include_blank: 'Selecione...' %>
   </p>
 
   <p>

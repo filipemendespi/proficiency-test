@@ -1,10 +1,14 @@
 pt-BR:
   helpers:
+    room:
+      create: "Matricular aluno"
     course:
       create: "Cadastrar curso"
     students:
       create: "Cadastrar Aluno"
     submit:
+      room:
+        create: "Matricular"
       course:
         create: "Cadastrar curso"
         update: "Atualizar dados"
@@ -16,6 +20,9 @@ pt-BR:
     error_message: "Verifique o formulário antes de continuar:"
 
     labels:
+      room:
+        students: "Selecionar aluno"
+        courses: "Selecionar curso"
       course:
         name: "Nome do Curso"
         description: "Descrição do curso"

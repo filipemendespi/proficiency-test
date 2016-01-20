@@ -27,10 +27,12 @@ ActiveRecord::Schema.define(version: 20160119225507) do
   create_table "rooms", force: true do |t|
     t.integer  "students_id"
     t.integer  "courses_id"
-    t.datetime "entry_at"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "rooms", ["courses_id"], name: "index_rooms_on_courses_id", using: :btree
+  add_index "rooms", ["students_id"], name: "index_rooms_on_students_id", using: :btree
 
   create_table "students", force: true do |t|
     t.string   "name"

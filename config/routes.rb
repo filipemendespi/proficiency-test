@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   get 'cadastrar/curso', to: 'courses#new', as: "courses"
   post 'cadastrar/curso', to: 'courses#create'
+
+  get 'matricular', to: 'rooms#new', as: 'rooms'
+  post 'matricular', to: 'rooms#create'
 end

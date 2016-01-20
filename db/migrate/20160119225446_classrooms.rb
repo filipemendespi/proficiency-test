@@ -1,9 +1,8 @@
 class Classrooms < ActiveRecord::Migration
   def change
     create_table :rooms do |t|
-      t.integer :students_id
-      t.integer :courses_id
-      t.datetime :entry_at
+      t.belongs_to :students, index: true
+      t.belongs_to :courses, index: true
 
       t.timestamps null: false
     end
