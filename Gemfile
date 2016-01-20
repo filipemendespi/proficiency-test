@@ -5,6 +5,7 @@ gem 'rails', '4.1.4'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails'
 
 gem 'enum_help'
 gem 'enumerate_it', '~> 1.2.0'
