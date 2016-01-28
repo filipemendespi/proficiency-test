@@ -8,6 +8,8 @@ class RoomsController < ApplicationController
 
     if @room.save
       redirect_to root_path, notice: t("flash.register.create.notice")
+    else
+      redirect_to root_path, notice: t("flash.register.create.notice")
     end
   end
 
@@ -15,6 +17,6 @@ class RoomsController < ApplicationController
   def room_path
     params
       .require(:room)
-        .permit :students_id, :courses_id
+        .permit :student_id, :course_id
   end
 end

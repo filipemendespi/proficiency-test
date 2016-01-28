@@ -1,6 +1,6 @@
 class Room < ActiveRecord::Base
-  validates_presence_of :students, :courses
+  validates_presence_of :student, :course
 
-  belongs_to :students
-  belongs_to :courses
+  belongs_to :student
+  belongs_to :course
 end
